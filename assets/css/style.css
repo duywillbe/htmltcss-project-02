@@ -1,0 +1,648 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primnary-color: #FFB900;
+    --font-heading: Sen, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Active */
+/* Common */
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #f5b40a;
+    padding: 0 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 999px;
+    line-height: 35px;
+    color: #ffff;
+
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+/*================================ Header =================================== */
+
+.header {
+    background-color: #fffcf4;
+
+}
+
+.header .body {
+    padding: 36px 0 8px;
+    display: flex;
+    align-items: center;
+}
+
+.fixed {
+    position: sticky;
+    top: -28px;
+    z-index: 1000;
+
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav {
+    margin-left: auto; /* khúc này dồn cả thằng BUTTON ẩy sang trái do trong HTML nằm dưới thẻ nav */
+}
+
+.nav a {
+    padding: 8px 21px; /* Dùng padding thay margin để tăng vùng bấm cho người dùng trên trang web */
+    color: #5F5B53;
+    font-size: 1.6rem;
+}
+
+.nav a:hover, .nav li.active a {
+    text-shadow: 0.5px 0 0 currentColor;
+    color: #171100;
+}
+
+.header .sign-up-btn {
+    line-height: 35px;
+    height: 40px;
+    min-width: 144px;
+    background-color: #000000;
+    color: #fff;
+}
+
+.header .action {
+    margin-left: 30px;
+}
+
+/*================================ HERO =================================== */
+
+.hero {
+    padding: 56px; /* để padding để trung màu với header ko được dùng margin */
+    background-color: #FFFCF4;
+}
+
+.hero .body {
+    display: flex;
+
+}
+
+.hero .media-block {
+    position: relative;
+    width: 48%;
+}
+
+.hero .media-block .img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hero-summary {
+    padding: 28px 24px;
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    border-radius: 12px;
+    width: 250px;
+    background: #FFF;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.4); /* Tạo Bóng đổ  */
+
+}
+
+.hero-summary .item {
+    display: flex;
+}
+
+.hero-summary .icon {
+    background: #FFF9E8;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .content-block {
+    width: 52%;
+    padding: 64px 0 0 120px;
+}
+
+.hero .desc {
+    margin-top: 22px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    line-height: 1.67; /* 166.667% */
+}
+
+.hero .cta-group {
+    margin: 38px 0 48px;
+    display: flex;
+}
+
+.hero-cta {
+    min-width: 180px;
+    line-height: 80px;
+    background-color: var(--primnary-color);
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.hero .watch-video {
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+    cursor: pointer;
+}
+
+.hero .watch-video #text-span {
+    block: inline-block;
+    color: #171100;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 166.667% */
+}
+
+.hero-summary .info {
+    margin-left: 16px;
+}
+
+.hero-summary .info .label {
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+}
+
+.hero-summary .info .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.hero-summary .item {
+    margin-top: 22px;
+}
+
+.hero-summary .icon2 {
+    background: #FCEFFF;
+}
+
+.hero-summary .icon3 {
+    background: #EBEAFF;
+}
+
+.hero .content-block .desc-up {
+    margin-top: 48px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+}
+
+.hero .content-block strong {
+    font-size: 38px;
+    font-weight: 500;
+    color: black;
+}
+
+.hero .heading {
+    width: 470px;
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 5.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+}
+
+/*================================ POPULAR =========================*/
+.popular {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.popular .info .heading {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.popular-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .inffo .desc {
+    margin-top: 16px;
+    width: 458px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+/* xóa đi style mặc đinh của button */
+.popular-top .controls {
+    display: flex;
+    gap: 18px;
+}
+
+.popular-top .controlbnt {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primnary-color);
+    background: transparent;
+}
+
+.popular-top .controlbnt:hover {
+    color: #fff;
+    background-color: var(--primnary-color);
+    cursor: pointer;
+}
+
+.popular .course-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.popular .course-list .course-item {
+    flex: 1;
+    border-radius: 12px;
+    border: 1px solid #E2DFDA;
+    background: #FFF;
+}
+
+.popular .course-list .course-item .thumb {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+}
+
+.popular .course-list .info {
+    padding: 16px 22px 22px;
+}
+
+.popular .info .rating,
+.popular .info .foot,
+.popular .info .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .info .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.popular .info .value {
+    margin-left: 6px;
+    color: #FEA31B;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8; /* 175% */
+}
+
+.popular .course-item .desc {
+    margin-top: 6px;
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+}
+
+.popular .info .foot {
+    margin-top: 12px;
+}
+
+.popular .info .foot .btn {
+    border: none;
+    cursor: pointer;
+}
+
+.popular .price {
+    color: #171100;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.66; /* 166.667% */
+}
+
+/*================================ FEEDBACK =========================*/
+.feedback {
+    background: #2E2100;
+    padding: 96px 0px;
+    margin-top: 135px;
+}
+
+.feedback .title {
+    margin-top: 18px;
+    color: #F7F7F7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42; /* 141.667% */
+}
+
+.feedback .desc {
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.88; /* 185.714% */
+}
+
+.feedback-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback .content blockquotes {
+    flex: 2;
+    color: #FFF;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 1.56; /* 153.846% */
+}
+
+.featured .info {
+    flex: 1;
+}
+
+.feedback-item .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-item .content {
+    width: 810px;
+}
+
+/*================================ features =========================*/
+.features{
+    margin-top: 200px;
+}
+.features .body, .images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.features .images{
+    gap: 30px;
+}
+.features .thumb{
+    flex:1;
+    width: 270px;
+    height: 405px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.features .thumb1{
+    align-items: flex-end;
+    margin-top: 50px;
+}
+.features .thumb2{
+    align-items: flex-start;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.3); /* Tạo Bóng đổ  */
+}
+.features .content{
+    width: 470px;
+    height: 100%;
+}
+.features .content .heading{
+
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+.features .content .desc{
+    margin-top: 16px;
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.8; /* 175% */
+}
+.features .content .btn{
+    margin-top: 32px;
+    width: 137px;
+    height: 40px;
+}
+/*================================ LESSON =========================*/
+.lesson{
+    margin-top: 200px;
+}
+.lesson .body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;
+}
+.lesson .content .heading{
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.27; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+.lesson .content .desc{
+    margin-top: 16px;
+    color: #5F5B53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.7; /* 175% */
+}
+
+.lesson .content .btn{
+    margin-top: 32px;
+    width: 137px;
+    height: 40px;
+}
+
+.lesson .img{
+    height: 470px;
+    width: 470px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/*================================ BLOG =========================*/
+.blog{
+    margin-top: 200px;
+    padding: 96px 0px 140px 0px;
+    background: #FFFCF4;
+
+}
+.blog .heading{
+    color: #130606;
+    text-align: center;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: -0.76px;
+}
+.blog .desc{
+    height: 56px;
+    color: #696262;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8; /* 175% */
+    margin-top: 16px;
+}
+.blog .list{
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+.blog-item{
+    background-color: #ffff;
+    border-radius: 16px;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.2); /* Tạo Bóng đổ  */
+}
+.blog-item .thumb{
+    width: 100%;
+    height: 250px;
+    border-radius:16px 16px 0px 0px;
+    object-fit: cover;
+}
+.blog-item .info{
+    padding: 20px 20px 28px 20px;
+}
+.head--date{
+    display: flex;
+    gap: 4px;
+}
+.head--date .dot-avt{margin-top: 20px;}
+.line{
+    width: 160px;
+    height: 1px;
+    background-color: #E2DFDA;
+}
+.blog-item .date{
+    margin-top: 20px;
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8; /* 185.714% */
+}
+.line{
+    margin-top: 12px;
+}
+.blog-item .open-info{
+    margin-top: 12px;
+    color: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.7; /* 175% */
+}
+
+.blog-item .btn{
+    background-color: #000000;
+    color: #fff;
+    margin-top: 12px;
+    border: none;
+}
+
+.blog-item .btn:hover{
+    cursor: pointer;
+    background-color: var(--primnary-color);
+    color:black;
+}
+/*================================ Footer =========================*/
+.footer{
+    padding: 96px 135px 28px 135px;
+    background: #2E2100;
+}
+.footer .body{
+    display: flex;
+    gap: 145px;
+}
+.footer .body .footer__left{
+    width: 267px;
+    height: 78px;
+}
+.footer .body .footer__left .logo{
+    padding-bottom: 18px ;
+}
+.footer .body .footer__left .info{
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8; /* 185.714% */
+}
+.footer .body .footer__left .social{
+    margin-top: 18px;
+}
+.footer .body .footer__right{
+    display: flex;
+    justify-content: space-between;
+    gap: 130px;
+}
+.footer .body .footer__right .contact a{
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8; /* 185.714% */
+}
+.footer .body .footer__right .title{
+    color: #FFF;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.7; /* 175% */
+}
+.footer .body .footer__right .contact{
+    margin-top: 28px;
+}
